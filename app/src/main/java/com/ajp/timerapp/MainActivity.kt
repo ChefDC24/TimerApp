@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         calendar.set(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH), 0, 0, 0)
         calendar.set(Calendar.MILLISECOND, 0)
         val timeSinceMidnightMillis = currentTime - calendar.time.time
-        val formattedTime = formatTime(timeSinceMidnightMillis)
+        //val formattedTime = formatTime(timeSinceMidnightMillis)
         // Timer text should be set to formattedTime
     }
 
@@ -43,8 +43,8 @@ class MainActivity : AppCompatActivity() {
     // seconds, and milliseconds, all of type long, and return a formatted string
 
     fun onButtonClick(v: View) {
-        val modifiedText = modifyText(binding.timerReminderInput.text.toString())
-        val reversedModifiedText = reverseString(modifiedText)
+        //val modifiedText = modifyText(binding.timerReminderInput.text.toString())
+        //val reversedModifiedText = reverseString(modifiedText)
         val calendar = Calendar.getInstance()
         val currentTime = calendar.time.time
         calendar.set(Calendar.HOUR, binding.timePicker.currentHour)
@@ -52,8 +52,8 @@ class MainActivity : AppCompatActivity() {
         calendar.set(Calendar.SECOND, 0)
         calendar.set(Calendar.MILLISECOND, 0)
         val timeMillis = calendar.time.time - currentTime
-        if (timeMillis > 0L) {
-            setTimer(timeMillis, reversedModifiedText)
+      //  if (timeMillis > 0L) {
+           // setTimer(timeMillis, reversedModifiedText)
         }
     }
 
